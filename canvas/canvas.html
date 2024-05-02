@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Canvas</title>
+</head>
+<body>
+    <p>Gambar:</p>
+    <img id="morax" src="morax.jpg" width="300" height="300">
+
+    <p>Gambar dalam canvas:</p>
+    <canvas id="myCanvas" width="300" height="300"
+    style="border:1px solid #d3d3d3;"></canvas>
+
+    <p><button onclick="Canvas()">Coba</button></p>
+
+    <script>
+    function Canvas() {
+        var canvas = document.getElementById("myCanvas");
+        var ctx = canvas.getContext("2d");
+        var img = document.getElementById("morax");
+        
+        ctx.drawImage(img, 1, 1, canvas.width, canvas.height);
+    }
+    </script>
+</body>
+</html>

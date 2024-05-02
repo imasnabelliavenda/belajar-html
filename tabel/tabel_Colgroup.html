@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Colgroup</title>
+	<style>
+		table, th, td {
+			border : 3px double black;
+			border-collapse : collapse;
+			border-color: rgb(192, 65, 65);
+			height: 40px;
+			margin: auto;
+		}
+		table {
+			width: 40%;
+		}
+		caption{
+			color: brown;
+			font-size: large;
+			font-style: italic;
+			font-weight: bold;
+		}
+	</style>
+</head>
+<body>
+	<table>
+		<caption>Contoh colgroup</caption>
+		<colgroup>
+			<col span="1" style="background-color: rgb(249, 187, 245);">
+			<col span="1">
+			<col span="1" style="background-color: rgb(185, 249, 156);">
+			<col span="1" style="background-color: rgb(137, 237, 248);">
+		</colgroup>
+		<tr>
+			<th>Pembelian</th>
+			<th>Nama buah</th>
+			<th>Harga</th>
+			<th>Total</th>
+		</tr>
+		<tr>
+			<td>2 kg</td>
+			<td>Apel</td>
+			<td>30.000</td>
+			<td>60.000</td>
+		</tr>
+		<tr>
+			<td>1 kg</td>
+			<td>Jambu</td>
+			<td></td>
+			<td>15.000</td>
+		</tr>
+		<tr>
+			<td>2 kg</td>
+			<td>Jeruk</td>
+			<td>15.000</td>
+			<td>30.000</td>
+		</tr>
+		</table>
+</body>
+</html>

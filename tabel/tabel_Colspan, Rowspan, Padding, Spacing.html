@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+    <title>Colspan</title>
+    <style>
+        table, th, td {
+            border : 1px solid black;
+            border-spacing: 10px;
+            border-radius: 5px;
+            padding: 8px;
+            width: 40%;
+        }
+        th, td {
+            border : 1px dashed black; 
+        }
+        caption {
+            color: brown;
+			font-size: large;
+			font-style: italic;
+			font-weight: bold;
+        }
+        th {
+			background-color: rgb(238, 194, 194);
+			color: brown;
+        }
+        tr:hover {
+            background-color: lightpink;
+        }
+    </style>
+    </head>
+    <body>
+        <table>
+            <caption>Contoh colspan</caption>
+            <tr>
+                <th>Pembelian</th>
+                <th>Nama buah</th>
+                <th>Harga</th>
+                <th>Total</th>
+            </tr>
+            <tr>
+                <td>2 kg</td>
+                <td>Apel</td>
+                <td>30.000</td>
+                <td>60.000</td>
+            </tr>
+            <tr>
+                <td>1 kg</td>
+                <td>Jambu</td>
+                <td></td>
+                <td>15.000</td>
+            </tr>
+            <tr>
+                <th colspan="3">JUMLAH</th>
+                <td>75.000</td>
+            </tr>
+        </table>
+        <br>
+        <table style="width:30%">
+            <caption>Contoh Rowspan</caption>
+            <tr>
+                <th>Nama</th>
+                <td>Wawan</td>
+            </tr>
+            <tr>
+                <th rowspan="2">No Telp</th>
+                <td>085678555430</td>
+            </tr>
+            <tr>
+                <td>089674332118</td>
+            </tr>
+        </table>
+    </body>
+</html>
