@@ -1,0 +1,42 @@
+.transformasi {
+    width: 300px;
+    height: 50px;
+    background-color: lightsalmon;
+    border: 1px saddlebrown;
+    transform: translate(50px, 25px);
+    
+}
+.transformasi1 {
+    width: 300px;
+    height: 50px;
+    background-color: lightsalmon;
+}
+.transformasi2 {
+    width: 300px;
+    height: 50px;
+    background-color: lightsalmon;
+    transform: rotateX(150deg);
+}
+.transisi{
+    width: 150px;
+    height: 50px;
+    background: lightsalmon;
+    transition: width 3s;
+    text-align: center;
+}
+.transisi:hover {
+    width: 300px;
+}
+.animasi {
+width: 150px;
+height: 50px;
+background-color: lightsalmon;
+animation-name: animation;
+animation-duration: 5s;
+text-align: center;
+}
+
+@keyframes animation {
+from {background-color: lightsalmon;}
+to {background-color: rgb(67, 30, 3);}
+}

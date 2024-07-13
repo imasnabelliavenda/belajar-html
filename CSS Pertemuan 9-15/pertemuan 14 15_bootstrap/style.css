@@ -1,0 +1,25 @@
+.profil {
+    display: flex;
+    align-items: center;
+    padding-top: 5%;
+    flex-direction: column;
+}
+
+.profil h4 {
+    transform: translateY(10px);
+}
+
+.img {
+    width: 200px;
+    height: 200px;
+}
+
+.about {
+    transform: translateY(60px);
+}
+
+.about h2 {
+    transform: translateY(-10px);
+    text-align: center;
+    padding-bottom: 2%;
+}

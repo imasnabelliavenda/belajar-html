@@ -1,0 +1,31 @@
+/* variabel */
+/* Mixin */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.isi h1 {
+  text-align: center;
+}
+
+.isi {
+  width: 80%;
+  text-align: justify;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 20px;
+  color: rgb(24, 24, 24);
+  align-items: center;
+  justify-content: center;
+}
+
+/* penerapan mixin */
+body {
+  height: 100vh;
+  margin: 0;
+  background-image: url("../image/genshin.jpeg");
+  background-size: cover;
+}
+
+/* nesting dan extend *//*# sourceMappingURL=main.css.map */

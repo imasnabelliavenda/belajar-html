@@ -1,0 +1,18 @@
+@import 'scss 2';
+
+/* penerapan mixin */
+body {
+    height: 100vh;
+    margin: 0;
+    @include background-image;
+    @extend %flex-center;
+}
+
+/* nesting dan extend */
+.isi {
+    @extend %container;
+
+    h1 {
+        @extend %text-center;
+    }
+}
