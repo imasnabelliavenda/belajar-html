@@ -1,0 +1,436 @@
+:root {
+    --bg: #D2B48C;
+    --primary: #8B4513;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg); 
+}
+
+/* navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 7%;
+    background-color: var(--bg);
+    position: fixed;
+    height: 50px;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+.navbar .navbar-logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.9);
+    font-style: italic;
+}
+
+.navbar .navbar-logo span {
+    color: var(--primary);
+}
+
+.navbar .navbar-1 a {
+    color: rgba(0, 0, 0, 0.9);
+    display: inline-block;
+    font-size: 16px;
+    margin: 0 13px;
+}
+
+.navbar .navbar-1 a:hover {
+    color: var(--primary);
+}
+
+.navbar .navbar-1 a::after {
+    content: '';
+    display: block;
+    padding-bottom: 2px;
+    border-bottom: 1px solid var(--primary);
+    transform: scaleX(0);
+    transition: 0.2s linear;
+}
+
+.navbar .navbar-1 a:hover::after {
+    transform: scaleX(0.7);
+}
+
+.navbar-2 ::-webkit-input-placeholder {
+    color: #ebebeb;
+}
+
+.navbar .navbar-2 a {
+    color: rgba(0, 0, 0, 0.9);
+}
+
+.navbar .navbar-2 a:hover {
+    color: var(--primary);
+}
+
+#menu {
+    display: none;
+}
+
+/* home */
+.home {
+    padding-bottom: 85px;
+}
+.content {
+    text-align: center;
+}
+
+.content h1 {
+    color: rgba(0, 0, 0, 0.9);
+    font-size: 32px;
+}
+
+.content p {
+    font-size: 15px;
+}
+
+.content .beda {
+    color: var(--primary);
+}
+
+.content .miring {
+    font-style: italic;
+}
+
+.img {
+    text-align: center;
+}
+
+.img img {
+    padding-top: 10%;
+    width: 100%;
+    max-width: 450px;
+}
+
+/* about */
+.about {
+    padding: 50px 7%;  
+    background-color: #8b4513d6;
+}
+
+.about-container {
+    color: #ccc;
+    border-radius: 15px;
+    padding-top: 3%;
+}
+
+.about-container h2 {
+    text-align: center;
+    padding-bottom: 32px;
+}
+.about-container p {
+    text-align: justify;
+    font-size: 15px;
+}
+
+/* resep */
+#resep {
+    text-align: center;
+    padding: 48px 7%;
+    padding-top: 5%;
+}
+
+#resep h2 {
+    color: rgba(0, 0, 0, 0.9);
+    font-weight: 800;
+}
+
+#search {
+    display: flex;
+    background-color: #8b451397;   
+    font-size: 13px;
+    padding-left: 3px;
+    font-family: 'Poppins', sans-serif;
+    color: #ebebeb;
+    box-sizing: border-box;
+    border-radius: 10px; 
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 2%;
+    margin-bottom: 1%;
+    font-size: 16px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+#search::placeholder {
+    color: #ebebeb;
+}
+.resep-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.resep {
+    border-radius: 5%;
+    margin: 16px;
+    background-color: rgba(225, 225, 225, 0.5);
+    padding-top: 17px;
+}
+
+.resep:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 1px 3px #8b451397;
+}
+
+.resep-card a {
+    color: var(--primary );
+    font-size: 14px;
+}
+
+.resep-card p {
+    color: rgba(10, 10, 10);
+    font-weight: 550;
+}
+
+.resep-card a:hover {
+    color: rgba(10, 10, 10);
+}
+
+.resep-card-img {
+    width: 80%;
+}
+
+/* footer */
+footer {
+    padding: 8px 7%;
+    margin-top: 16px;
+    font-size: 14px;
+    
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid #8B4513;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+footer .sosmed a , .link a {
+    color: rgba(0, 0, 0, 0.9);
+    margin: 5px;
+}
+
+.link {
+    text-align: left;
+}
+
+.link a {
+    display: block;
+    margin: 15px 0;
+}
+
+.sosmed {
+    text-align: center;
+}
+
+.sosmed img {
+    width: 90px;
+}
+
+.link a:hover{
+    color: var(--primary);
+}
+
+.sosmed a:hover{
+    color: var(--primary);
+}
+
+.kontak form input,
+.kontak form textarea,
+.kontak form button {
+    display: block;
+    width: 100%;
+    margin: 5px 0;
+    padding-left: 3px;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.kontak form input,
+.kontak form textarea {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.kontak form button {
+    background-color: #8b4513d6;
+    color: #ebebeb;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.kontak form button:hover {
+    background-color: darken(var(--primary));
+}
+
+.kontak form textarea {
+    resize: vertical;
+}
+
+/* grid system */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"] {
+    float: left;
+    width: 100%;
+}
+
+/* Media Queries */
+/* laptop */
+@media only screen and (min-width: 768px) {
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+
+    .content {
+        padding-top: 18%;
+        padding-right: 6%;
+    }
+    .img {
+        text-align: right;
+        padding-top: 3%;
+    }
+    .resep {
+        padding-bottom: 15px;
+    }
+    #resep {
+        text-align: center;
+    }
+}
+
+/* tablet */
+@media(max-width: 768px) {
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+
+    html {
+        font-size: 80%;
+    }
+    .navbar {
+        height: 35px;
+    }
+    #menu {
+        display: inline-block;
+    }
+    .navbar .navbar-1 {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background-color: beige;
+        width: 200px;
+        height: 100vh;
+    }
+    .navbar .navbar-1.active {
+        right: 0;
+    }
+    .navbar .navbar-1 a {
+        display: block;
+        margin: 13px;
+        padding: 6px;
+        font-size: 16px;
+    }
+    .navbar .navbar-1 a::after {
+        transform-origin: 0 0;
+    }
+    .navbar .navbar-1 a:hover::after {
+        transform: scaleX(0.3);
+    }
+    .content {
+        padding: 8px 7%;
+    }
+    .content h1 {
+        font-size: 24px;
+    }
+    .img img {
+        width: 60%;
+    }
+    #resep {
+        padding-top: 70px;
+    }
+    .resep {
+        background-size: cover;
+        background-position: center;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+
+}
+
+/* hp */
+@media only screen and (max-width: 600px) {
+    [class*="col-"] {
+        width: 100%;
+    }
+    .content {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .img img {
+        width: 50%;
+    }
+    .resep {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-size: cover;
+        background-position: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        width: 65%;
+    }
+    .resep-card a {
+        font-size: 12px;
+    }
+    .sosmed img {
+        width: 70px;
+    }
+    .kontak {
+        float: right;
+        width: 30%;
+    }   
+}
